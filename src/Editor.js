@@ -1,6 +1,7 @@
 import React from "react";
-import "./Editor.css";
 
-export default function Editor({ handleChange }) {
-  return <textarea id="editor" onChange={handleChange}></textarea>;
+export default function Editor({ handleChange, input }) {
+  return (
+    <textarea id="editor" onChange={handleChange} value={input}></textarea>
+  );
 }
